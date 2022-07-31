@@ -828,7 +828,7 @@ class VariantSelects extends HTMLElement {
   }
 
   updateShippingTime() {
-    const shippingTime = document.querySelector('cc_ship_time');
+    const shippingTime = document.getElementById('cc_ship_time');
     if (!shippingTime) return;
 
     get_stock(this.currentVariant.id)

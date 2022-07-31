@@ -503,6 +503,7 @@
             <script>
               async function get_stock(variantID) {
                 var div = document.getElementById("cc_ship_time");
+                div.style.color = "";
                 div.innerHTML = "Checking stock status..."
                 try {
                   var stock_status = await (await fetch("https://shopapp.ceracarbon-racing.com/ship_time?p=" + variantID)).json();
