@@ -504,9 +504,9 @@
                 async function get_stock() {
                     let div = getElementById("cc_ship_time");
                     let stock_status = await fetch("https://shopapp.ceracarbon-racing.com/ship_time?p={{product_variant.id}}").json();
-                    if stock_status["inStock"] == "sprocket" {
+                    if (stock_status["inStock"] == "sprocket") {
                         div.style.color = "#008500";
-                    } else if stock_status["inStock"] == "blank" {
+                    } else if (stock_status["inStock"] == "blank") {
                         div.style.color = "#ff7300";
                     } else {
                         div.style.color = "#e2001a";
