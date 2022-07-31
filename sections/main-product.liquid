@@ -496,8 +496,7 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
-          {%- endcase -%}
-          {%- when 'shippingtime' -%}
+          {%- when 'shippingtime' %}
             <div id="cc_ship_time">
               <noscript>Javascript disabled - Cannot retrieve stock</noscript>
             </div>
