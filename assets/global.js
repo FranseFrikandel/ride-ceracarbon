@@ -756,6 +756,7 @@ class VariantSelects extends HTMLElement {
     this.updatePickupAvailability();
     this.removeErrorMessage();
 
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
@@ -823,6 +824,13 @@ class VariantSelects extends HTMLElement {
       pickUpAvailability.removeAttribute('available');
       pickUpAvailability.innerHTML = '';
     }
+  }
+
+  updateShippingTime() {
+    const shippingTime = document.querySelector('cc_ship_time');
+    if (!shippingTime) return;
+
+    get_stock(this.currentVariant.id)
   }
 
   removeErrorMessage() {
