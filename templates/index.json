@@ -1,5 +1,35 @@
 {
   "sections": {
+    "1659356290b7db34c7": {
+      "type": "rich-text",
+      "blocks": {
+        "16593562901c8dc462-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Wear Resistant Composites<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "16593562901c8dc462-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We combine the wear resistance of ceramics and the light weight of carbonfiber into a rigid, durable, ultra-strong and light-weight material (CeraCarbon). By applying a ceramic coating onto carbonfiber we are able to outperform any existing material. Our product is up to times lighter than steel and 100 times more durable compared to carbon fiber.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16593562901c8dc462-0",
+        "16593562901c8dc462-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
@@ -31,7 +61,6 @@
         "button"
       ],
       "settings": {
-        "image": "{{ shop.brand.cover_image }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -40,12 +69,13 @@
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
         "mobile_content_alignment": "left",
-        "padding_top": 40,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -276,7 +306,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Be the first to know about new developments and offers.<\/p>"
           }
         },
         "email-form": {
@@ -299,6 +329,7 @@
     }
   },
   "order": [
+    "1659356290b7db34c7",
     "image-with-text",
     "featured_collection",
     "image-with-text-1",

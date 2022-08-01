@@ -133,7 +133,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "shopify:\/\/shop_images\/CC_Racing_lang_wit.png",
-          "logo_width": 160,
+          "logo_width": 180,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
@@ -150,12 +150,13 @@
           "link-list": {
             "type": "link_list",
             "settings": {
-              "heading": "ABOUT US",
+              "heading": "Links",
               "menu": "footer"
             }
           },
           "image": {
             "type": "image",
+            "disabled": true,
             "settings": {
               "image_width": 70,
               "alignment": "right"
