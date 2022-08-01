@@ -4,7 +4,68 @@
       "type": "main-page",
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
+      }
+    },
+    "1659354610dfbd0e24": {
+      "type": "collapsible-content",
+      "blocks": {
+        "165935461076039594-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does \"made to order\" mean?",
+            "icon": "check_mark",
+            "row_content": "<p>Due to the huge variety of sprockets we offer for all different kinds of motorcycles, we do not keep every single variation in stock. Instead we ensure we have the raw materials in stock to manufacture these sprockets entirely in-home. Sprockets that are made to order will typically ship in 4-6 weeks.<\/p>",
+            "page": ""
+          }
+        },
+        "165935461076039594-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does \"Chain conversion\" mean?",
+            "icon": "check_mark",
+            "row_content": "<p>\"Chain conversion\" means that this motorcycle was originally fitted with a different chain size. The sprocket will fit on the motorcycle, but the front sprocket and the chain will both also need to be replaced with the correct chain size. Using a smaller chain may cause increased wear.<\/p>",
+            "page": ""
+          }
+        },
+        "165935461076039594-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is another question people ask?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "165935461076039594-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "@dani you have a question?",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "165935461076039594-0",
+        "165935461076039594-1",
+        "165935461076039594-2",
+        "165935461076039594-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "newsletter": {
@@ -44,6 +105,7 @@
   },
   "order": [
     "main",
+    "1659354610dfbd0e24",
     "newsletter"
   ]
 }
