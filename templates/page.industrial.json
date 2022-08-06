@@ -4,7 +4,16 @@
       "type": "main-page",
       "settings": {
         "padding_top": 28,
-        "padding_bottom": 28
+        "padding_bottom": 0
+      }
+    },
+    "1659826049b839a4b5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; flex-wrap: wrap; justify-content: center;\">\n<div style=\"display: flex-box; width: 40em; padding: 30px; text-align: center;\">\n<h2>Carbon fiber vacuum chamber<\/h2>\n<p>In cooperation with <a href=\"https:\/\/ng-sensors.com\/\">Next Generation Sensors<\/a>, we are developing a carbon fiber reinforced vacuum chamber for use with thier lightweight mass spectrometer.<\/p>\n\n<p>By using the CeraCarbon ceramic coating, a carbon fiber vacuum chamber can be created without the epoxy resin of the carbon fiber being exposed to the vacuum, preventing the offgassing issues normally presented by a carbon fiber composite in vacuum measurement applications. This allows for an ultra-light vacuum chamber.<\/p>\n\n<p>This project is made possible in part by EU subsidies<\/p>\n<\/div>\n<div style=\"display: flex-box; width: 30em; padding: 30px;\">\n<img style=\"width: 100%;\" src=\"https:\/\/static.ceracarbon-racing.com\/ng-sensors\/MITzuid_EZ_naast-elkaar_NW.png\">\n<\/div>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "newsletter": {
@@ -44,6 +53,7 @@
   },
   "order": [
     "main",
+    "1659826049b839a4b5",
     "newsletter"
   ]
 }
