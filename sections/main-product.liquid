@@ -203,10 +203,13 @@
 
     {% for image in product.images %}
       {% assign var = product.selected_variant%}
-      {% assign chain = var.option1%}
-      {% assign tooth = var.option2 %}
-      {% assign serie = product.title %}
-        <script>console.log({{ tooth | json }});</script>
+      {% assign chain = var.option1 | append: "" %}
+      {% assign tooth = var.option2 | append: "" %}
+      {% assign serie = product.title | append: "" %}
+
+      {% assign sprock = chain | append: serie %}
+      {% assign sprock = sprock | append: tooth %}
+        <script>console.log({{ sproc | json }});</script>
     {% endfor %}
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
