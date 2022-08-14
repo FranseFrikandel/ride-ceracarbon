@@ -203,12 +203,8 @@
 
     {% for image in product.images %}
       {% assign var = product.selected_variant%}
-      {% assign chain = var.option1 | append: "" %}
-      {% assign tooth = var.option2 | append: "" %}
-      {% assign serie = product.title | append: "" %}
+      {% assign sproc = var.option1 | append: product.title | append: var.option2 %}
 
-      {% assign sprock = chain | append: serie %}
-      {% assign sproc = sprock | append: tooth %}
         <script>console.log({{ sproc | json }});</script>
     {% endfor %}
     
