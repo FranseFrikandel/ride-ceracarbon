@@ -122,28 +122,7 @@
                   assign media_index = media_index | plus: 1
                 -%}
                 <li id="Slide-Thumbnails-{{ section.id }}-0" class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}" data-target="{{ section.id }}-{{ featured_media.id }}" data-media-position="{{ media_index }}"
-                style={% for image in product.images %}
-                        {% assign var = product.selected_variant%}
-                        {% case var.option1 %}
-                          {% when '415' %}
-                          {% assign chain = '2' %}
-                          {% when '520' %}
-                          {% assign chain = '5' %}
-                          {% when '525' %}
-                          {% assign chain = '6' %}
-                          {% when '530' %}
-                          {% assign chain = '7' %}
-                          {% else %}
-                          {% assign chain = 'unknown' %}
-                        {% endcase %}
-                    
-                        {% assign sproc = chain | append: product.title | append: var.option2 %}
-                        
-                        {% if image.alt != sproc %}
-                          "display:none;"
-                        {% endif %}
-                      {% endfor %}
-                >
+                style="display:none;">
                   <button class="thumbnail global-media-settings global-media-settings--no-shadow {% if featured_media.preview_image.aspect_ratio > 1 %}thumbnail--wide{% else %}thumbnail--narrow{% endif %}"
                     aria-label="{%- if featured_media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif featured_media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
                     aria-current="true"
