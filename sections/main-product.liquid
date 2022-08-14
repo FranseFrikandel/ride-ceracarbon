@@ -215,9 +215,12 @@
         {% else %}
         {% assign chain = 'unknown' %}
       {% endcase %}
+      
       {% assign sproc = chain | append: product.title | append: var.option2 %}
-
-        <script>console.log({{ sproc | json }});</script>
+      <script>console.log({{ sproc | json }});</script>
+      {% if image.alt == sproc %}
+        
+      {% endif %}
     {% endfor %}
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
