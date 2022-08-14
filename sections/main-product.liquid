@@ -215,12 +215,11 @@
         {% else %}
         {% assign chain = 'unknown' %}
       {% endcase %}
-      
+  
       {% assign sproc = chain | append: product.title | append: var.option2 %}
-      <script>console.log({{ sproc | json }});</script>
+      
       {% if image.alt != sproc %}
-        {% assign id = image.id %}
-        <li id="Slide-Thumbnails-template--15734435807422__main-0" class="thumbnail-list__item slider__slide" style = "display:none;"></li>
+        <script>console.log({{ sproc | json }});</script>
       {% endif %}
     {% endfor %}
     
