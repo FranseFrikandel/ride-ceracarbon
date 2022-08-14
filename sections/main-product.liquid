@@ -203,7 +203,7 @@
 
     {% for image in product.images %}
       {% unless image.attached_to_variant? %}
-        image.src = ""
+        <script>console.log("test");</script>
       {% endunless %}
     {% endfor %}
     
