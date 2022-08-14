@@ -1184,4 +1184,7 @@ a.product__text {
   flex-shrink: 0;
 }
 
-.thumbnail-list__item {   display: none;}
+/* Filter the thumbnail list, hides all thumbnails
+.thumbnail-list__item {   
+  display: none;
+} */
