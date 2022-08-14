@@ -203,7 +203,19 @@
 
     {% for image in product.images %}
       {% assign var = product.selected_variant%}
-      {% assign sproc = var.option1 | append: product.title | append: var.option2 %}
+      {% case var.option1 %}
+        {% when '415' %}
+        {% assign chain = '2' %}
+        {% when '520' %}
+        {% assign chain = '5' %}
+        {% when '525' %}
+        {% assign chain = '6' %}
+        {% when '530' %}
+        {% assign chain = '7' %}
+        {% else %}
+        {% assign chain = 'unknown' %}
+      {% endcase %}
+      {% assign sproc = chain | append: product.title | append: var.option2 %}
 
         <script>console.log({{ sproc | json }});</script>
     {% endfor %}
