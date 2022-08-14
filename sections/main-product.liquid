@@ -203,7 +203,7 @@
 
     {% for image in product.images %}
       {% unless image.attached_to_variant? %}
-        <script>console.log("test");</script>
+        <script>console.log(img.alt);</script>
       {% endunless %}
     {% endfor %}
     
