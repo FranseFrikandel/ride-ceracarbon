@@ -102,17 +102,6 @@
             {{ 'products.product.xr_button' | t }}
           </button>
         {%- endif -%}
-
-        {%- for media in product.media -%}
-        	{%- unless media.attached_to_variant? -%}
-        		<!-- show image gallery -->
-        	{%- endunless -%}
-        {%- endfor -%}
-        {%- for media in product.media -%}
-        	{%- if media.attached_to_variant? -%}
-        		<!-- show image variants -->
-        	{%- endif -%}
-        {%- endfor -%}
             
         
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' -%}
