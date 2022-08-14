@@ -179,9 +179,9 @@
               
                   {% assign sproc = chain | append: product.title | append: var.option2 %}
                   {% if media.alt != sproc %}
-                    {% assign styleval = "teststyle disabled"%}
+                    {% assign styleval = "display:none;"%}
                   {% else %}
-                    {% assign styleval = "teststyle enabled" %}
+                    {% assign styleval = "" %}
                   {% endif %}
                   <script>console.log({{media.alt | json}});</script>
                   <script>console.log({{sproc | json}});</script>
