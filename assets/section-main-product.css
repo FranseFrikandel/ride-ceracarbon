@@ -1184,4 +1184,4 @@ a.product__text {
   flex-shrink: 0;
 }
 
-.product-single__thumbnails {   display: none;}
+.thumbnail-list__item {   display: none;}
