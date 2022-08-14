@@ -202,8 +202,7 @@
     </div>
 
     {% for image in product.images %}
-        {% assign var = product_variant %}
-        <script>console.log({{ var.option1 | json }});</script>
+        <script>console.log({{ product_variant.option1 | json }});</script>
     {% endfor %}
     
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}">
