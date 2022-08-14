@@ -180,6 +180,9 @@
                   {% assign sproc = chain | append: product.title | append: var.option2 %}
                   {% if media.alt != sproc %}
                     {% assign styleval = "display:none;"%}
+                    <script>console.log({{media.alt | json}});</script>
+                    <script>console.log({{sproc | json}});</script>
+                    <script>console.log({{styleval | json}});</script>
                   {% endif %}
               
               
