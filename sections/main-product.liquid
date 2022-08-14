@@ -203,7 +203,7 @@
 
     {% for image in product.images %}
       {% unless image.attached_to_variant? %}
-        <script>console.log({{ image | img_alt: 'master' }}");</script>
+        <script>console.log({{ image.alt | json }});</script>
       {% endunless %}
     {% endfor %}
     
