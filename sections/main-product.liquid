@@ -219,7 +219,7 @@
       {% assign sproc = chain | append: product.title | append: var.option2 %}
       
       {% if image.alt != sproc %}
-        <script>console.log({{ sproc | json }});</script>
+        <script>console.log({{ img.alt | json }});</script>
       {% endif %}
     {% endfor %}
     
