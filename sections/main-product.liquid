@@ -203,8 +203,8 @@
 
     {% for image in product.images %}
       {% unless image.attached_to_variant? %}
-          {% for prod in all_products %}
-              <script>console.log({{ prod.title | json }});</script>
+          {% for var in product.variants %}
+              <script>console.log({{ var.option1 | json }});</script>
           {% endfor %}
       {% endunless %}
     {% endfor %}
