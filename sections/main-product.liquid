@@ -222,6 +222,11 @@
       
       {% if image.alt != sproc %}
         <script>console.log({{ image.alt | json }});</script>
+        <li class="grid-item one-quarter">
+              <a href="{{ image.src | img_url: '1024x1024' }}" class="product-single__thumb" data-image-id="{{ image.id }}">
+                <img src="{{ image.src | img_url: 'compact' }}" alt="{{ image.alt | escape }}" style="nodisplay">
+              </a>
+        </li>
       {% endif %}
     {% endfor %}
     
